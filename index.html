@@ -68,7 +68,7 @@
             Ефективні рішення для<br />
             вашого бізнесу
           </h1>
-          <button class="hero-btn" type="button">Замовити поcлугу</button>
+          <button class="hero-btn" type="button" data-modal-open>Замовити поcлугу</button>
         </div>
       </section>
       <!-- benefits -->
@@ -129,31 +129,46 @@
           <h2 class="activity-title">Чим ми займаємося</h2>
           <ul class="activity-list list">
             <li class="activity-item">
-              <img
-                class="activity-item-img"
-                src="./images/activity-01.jpg"
-                width="370"
-                height="294"
-                alt="Людина працює на комп'ютері у графічних програмах"
-              />
+                <div class="activity-wrap">
+                  <img
+                    class="activity-item-img"
+                    src="./images/activity-01.jpg"
+                    width="370"
+                    height="294"
+                    alt="Людина працює на комп'ютері у графічних програмах"
+                  />
+                  <div class="activity-box">
+                    <p class="activity-box-text">Десктопні додатки</p>
+                  </div>
+                </div>
             </li>
             <li class="activity-item">
-              <img
-                class="activity-item-img"
-                src="./images/activity-02.jpg"
-                width="370"
-                height="294"
-                alt="Людина тримає в руках телефон"
-              />
+              <div class="activity-wrap">
+                <img
+                  class="activity-item-img"
+                  src="./images/activity-02.jpg"
+                  width="370"
+                  height="294"
+                  alt="Людина тримає в руках телефон"
+                />
+                <div class="activity-box">
+                  <p class="activity-box-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
             <li class="activity-item">
-              <img
-                class="activity-item-img"
-                src="./images/activity-03.jpg"
-                width="370"
-                height="294"
-                alt="Людина демонструє палітру кольорів на паншеті"
-              />
+              <div class="activity-wrap">
+                <img
+                  class="activity-item-img"
+                  src="./images/activity-03.jpg"
+                  width="370"
+                  height="294"
+                  alt="Людина демонструє палітру кольорів на паншеті"
+                />
+                <div class="activity-box">
+                  <p class="activity-box-text">Дизайнерські рішення</p>
+                </div>
+              </div >
             </li>
           </ul>
         </div>
@@ -388,6 +403,15 @@
           </ul>
         </div>
       </section>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-btn" type="button" data-modal-close>
+            <svg class="modal-icon" width="11" height="11">
+              <use class="modal-icon-img" href="./images/symbol-defs.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
     </main>
     <footer class="footer">
       <div class="container footer-wrap">
@@ -470,5 +494,6 @@
         </div>
       </div>
     </footer>
+      <script src="./js/modal.js"></script>
   </body>
 </html>
